@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 *,
 *::after,
 *::before {
@@ -9,5 +10,66 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: rgb(133, 128, 128);
+}
+.heading{
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Syne Mono', monospace;
+  letter-spacing: 2px;
+}
+.slider__imgbox{
+  width: 500px;
+  height: 600px;
+}
+.slider__list{
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.slider__item{
+margin: 20px 0;
+position: absolute;
+top: 50%;
+}
+.slider__imgbox img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn__nextbox{
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  transform: translate(0,-50%);
+}
+.btn__prevbox{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(0,-50%);
+}
+.btn__prev,
+.btn__next{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.bx{
+  font-size: 50px;
+  color: #ccc;
+}
+.animation{
+  animation: fade 1s ease;
+}
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }

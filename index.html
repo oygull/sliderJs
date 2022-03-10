@@ -8,13 +8,41 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  
- </div>
+  <div class="sleder">
+    <h1 class="heading">--Inside Out--</h1>
+    <div class="container">
+      <ul class="slider__list">
+        <li class="slider__item">
+          <div class="slider__imgbox">
+           <img src="images/sadness.png" alt="sadness">
+          </div>
+        </li>
+        <li class="slider__item">
+          <div class="slider__imgbox">
+            <img src="images/joy.png" alt="joy">
+          </div>
+        </li>
+        <li class="slider__item">
+          <div class="slider__imgbox">
+            <img src="images/anger.png" alt="anger">
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="btn__prevbox">
+      <button id="prevBtn" class="btn__prev"><i class='bx bx-chevrons-left'></i></button>
+    </div>
+    <div class="btn__nextbox">
+      <button id="nextBtn" class="btn__next"><i class='bx bx-chevrons-right' ></i></button>
+    </div>
+  </div>
+
 
 
   <script src="js/main.js">
